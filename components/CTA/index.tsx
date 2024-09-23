@@ -13,9 +13,13 @@ const useRelativeMousePosition = (to: RefObject<HTMLElement>) => {
     const updateMousePosition = useCallback((e: MouseEvent) => {
         if (!to.current) return;
 
-        const { top, left } = to.current.getBoundingClientRect();
-        mouseX.set(e.clientX - left);
-        mouseY.set(e.clientY - top);
+        const { top, left, width, height } = to.current.getBoundingClientRect();
+
+        const xPos = ((e.clientX - left) / width) * 100;
+        const yPos = ((e.clientY - top) / height) * 100;
+
+        mouseX.set(xPos);
+        mouseY.set(yPos);
     }, [mouseX, mouseY, to]);
 
     useEffect(() => {
