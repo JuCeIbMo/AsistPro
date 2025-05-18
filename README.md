@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Landing Page - Stunning, Responsive & Animated
 
-## Getting Started
+<p style="text-align: center;">
+    <a href="https://www.pedroestevao.com">
+        <img src="https://res.cloudinary.com/dge3g9rcw/image/upload/v1747589615/github/b72tltyujl1wfe15oc70.webp" alt="Illustrative image" />
+    </a>
+</p>
 
-First, run the development server:
+A pixel-perfect **AI-themed marketing landing page** built with **React**, **Next.js 14 (App Router)**, **Tailwind CSS**, and **Framer Motion**. 100 % responsive, production-ready, and packed with smooth micro-interactions to captivate your visitors.
+
+## Key Features
+
+- **Instant load** – Optimized images & Next.js dynamic imports
+- **Fully responsive** – Mobile-first layout that scales to 4K
+- **Framer Motion animations** – Hero reveal, logo ticker, parallax mockups, fade-in testimonials, and more
+- **Reusable components** – Header, Button, Section, TestimonialCard, etc.
+- **Dark-mode ready** – Toggle with `system` preference by default
+- **Static & dynamic images** – Next `<Image>` component with blur placeholders
+
+## Tech Stack
+
+The project was built using the following technologies and tools:
+
+- [Next.js (App Router)](https://nextjs.org/) - React framework for web applications.
+- [React](https://react.dev/) - JavaScript library for building user interfaces.
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript superset for static typing.
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework for fast and customizable design.
+- [Motion](https://motion.dev/) - A robust animation library for modern web projects using JavaScript, React, or Vue.
+
+## Figma Design
+
+- [AI Startup Landing Page — Frontend Tribe](https://www.figma.com/design/vln3nOGGr36JKPsIFdQMU4/AI-Startup-Landing-Page-%E2%80%94-Frontend-Tribe?node-id=4007-681&p=f&t=jrDYhgDNS5C70BRL-0)
+
+## Setup & Installation
+
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/pedroestevaodev/stunning-ia-lp.git
+cd stunning-ia-lp
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+$ npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Start the development server
 
-## Learn More
+```bash
+$ npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open your browser and visit `http://localhost:3000` to see the project in action.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can start editing the homepage by modifying the `app/page.tsx` file. The browser will automatically update as you make changes to the code.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Available Commands
 
-## Deploy on Vercel
+Here are the main commands available for the project:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Command          | Description                   |
+| ---------------- | ----------------------------- |
+| `dev`       | Starts the development server |
+| `build`     | Builds the app for production |
+| `start`     | Runs the built app            |
+| `lint`      | Lints the code using ESLint   |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy
+
+The easiest way to deploy your Next.js application is by using the [Vercel Platform](https://vercel.com/new), created by the developers of Next.js.
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Learning Credits
+
+This project was built based on the **YouTube** tutorial:
+
+🎬 [**_Create a Stunning AI Landing Page from Scratch (React, Next.js, Tailwind, Framer Motion)_**](https://youtu.be/Z7I5uSRHMHg?si=lBpp_nXP7I0_-pCu)  
+👨🏻‍💻 [Frontend Tribe](https://www.youtube.com/@frontend-tribe)
+
+## License
+
+This project is open source and available under the [MIT License](https://mit-license.org/).  
+<br />
+
+---
+
+<br />
+
+**Built with ☕ by [Pedro Estevão](https://www.pedroestevao.com)**
