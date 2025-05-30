@@ -14,7 +14,6 @@ A pixel-perfect **AI-themed marketing landing page** built with **React**, **Nex
 - **Fully responsive** – Mobile-first layout that scales to 4K
 - **Framer Motion animations** – Hero reveal, logo ticker, parallax mockups, fade-in testimonials, and more
 - **Reusable components** – Header, Button, Section, TestimonialCard, etc.
-- **Dark-mode ready** – Toggle with `system` preference by default
 - **Static & dynamic images** – Next `<Image>` component with blur placeholders
 
 ## Tech Stack
