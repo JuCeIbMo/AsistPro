@@ -1,0 +1,29 @@
+Checkpoint del Proyecto - Fecha: 15/06/2025
+
+ESTADO ACTUAL:
+
+1. Sección PhoneMockups implementada:
+   - Componente principal: components/PhoneMockups/index.tsx
+   - Componente reutilizable: components/PhoneMockups/PhoneMockup.tsx
+   - Integrado en app/page.tsx después del Hero
+
+2. Assets implementados:
+   - Imágenes:
+     * public/imgs/phone-mockups/left-phone.png
+     * public/imgs/phone-mockups/right-phone.png
+   - Video:
+     * public/videos/center-demo.mp4
+
+3. Funcionalidades:
+   - Diseño responsive (3 celus en desktop, 1 en mobile)
+   - Animaciones con Framer Motion
+   - Efectos hover
+   - Video con autoplay
+
+4. Servidor funcionando en:
+   http://localhost:3001
+
+PRÓXIMOS PASOS POSIBLES:
+1. Ajustes de diseño adicionales
+2. Integración con otras secciones
+3. Optimización de assets

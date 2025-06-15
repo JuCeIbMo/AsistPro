@@ -1,12 +1,18 @@
+'use client';
+
 import { Check, X } from "lucide-react";
 import Button from "../Button";
+import { motion } from "framer-motion";
+import starsBg from "@/public/imgs/stars.png";
+import gridLines from "@/public/imgs/grid-lines.png";
+import { glowVisuals } from "@/config/glowVisuals";
 
 const Pricing = () => {
   const plans = [
     {
       name: "Starter",
       price: "ARS $3.999/mes",
-      color: "bg-blue-500",
+      color: glowVisuals.radialGradient,
       tagline: "Ideal para quienes quieren comenzar",
       features: [
         "40 recordatorios por mes",
@@ -28,7 +34,7 @@ const Pricing = () => {
     {
       name: "Pro",
       price: "ARS $5.999/mes",
-      color: "bg-yellow-400",
+      color: glowVisuals.yellowGradient,
       tagline: "Para usuarios activos que quieren control",
       features: [
         "180 recordatorios por mes",
@@ -50,7 +56,7 @@ const Pricing = () => {
     {
       name: "Premium",
       price: "ARS $9.999/mes",
-      color: "bg-purple-500",
+      color: glowVisuals.purpleGradient,
       tagline: "Todo lo que necesitás, sin límites",
       features: [
         "Recordatorios ilimitados",
@@ -73,10 +79,28 @@ const Pricing = () => {
   return (
     <section id="pricing" className="py-20">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">Nuestros Planes</h2>
+        <h2 className="text-5xl md:text-6xl max-w-sm mx-auto tracking-tighter text-center font-medium mb-12">
+          Nuestros Planes
+        </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <div key={index} className={`${plan.color} p-8 rounded-xl text-white`}>
+            <motion.div 
+              key={index}
+              className="relative group border border-white/15 p-8 rounded-xl overflow-hidden"
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              style={{
+                background: plan.color,
+                boxShadow: glowVisuals.multiGlowShadow,
+              }}
+            >
+              <div 
+                className="absolute inset-0 bg-blend-overlay [mask-image:radial-gradient(50%_50%_at_50%_35%,black,transparent)] group-hover:opacity-0 transition duration-700"
+                style={{
+                  backgroundImage: `url(${gridLines.src})`,
+                }}
+              />
+              <div className="relative z-10 text-white">
               <div className="flex justify-between items-start mb-6">
                 <div>
                   <h3 className="text-2xl font-bold">{plan.name}</h3>
@@ -114,7 +138,8 @@ const Pricing = () => {
               <Button className="w-full mt-4 bg-white text-black hover:bg-gray-100">
                 {plan.trial}
               </Button>
-            </div>
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>

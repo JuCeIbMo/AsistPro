@@ -6,12 +6,14 @@ import Hero from "@/components/Hero";
 import LogoTicker from "@/components/LogoTicker";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
+import { PhoneMockups } from "@/components/PhoneMockups";
 
 const Home = () => {
 	return (
 		<>
 			<Header />
 			<Hero />
+			<PhoneMockups />
 			<Features />
       <Testimonials />
       <Pricing />
