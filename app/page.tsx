@@ -5,16 +5,17 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import LogoTicker from "@/components/LogoTicker";
 import Testimonials from "@/components/Testimonials";
+import Pricing from "@/components/Pricing";
 
 const Home = () => {
 	return (
 		<>
 			<Header />
 			<Hero />
-			<LogoTicker />
 			<Features />
-			<Testimonials />
-			<CTA />
+      <Testimonials />
+      <Pricing />
+      <CTA />
 			<Footer />
 		</>
   	);

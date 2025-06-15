@@ -60,13 +60,13 @@ const CTA = () => {
                     }}
                 >
                     <div 
-                        className="absolute inset-0 bg-[rgb(74,32,138)] bg-blend-overlay [mask-image:radial-gradient(50%_50%_at_50%_35%,black,transparent)] group-hover:opacity-0 transition duration-700"
+                        className="absolute inset-0 bg-primary-blue-900 bg-blend-overlay [mask-image:radial-gradient(50%_50%_at_50%_35%,black,transparent)] group-hover:opacity-0 transition duration-700"
                         style={{
                             backgroundImage: `url(${gridLines.src})`,
                         }}
                     />
                     <motion.div 
-                        className="absolute inset-0 bg-[rgb(74,32,138)] bg-blend-overlay opacity-0 group-hover:opacity-100 transition duration-700"
+                        className="absolute inset-0 bg-primary-blue-900 bg-blend-overlay opacity-0 group-hover:opacity-100 transition duration-700"
                         style={{
                             backgroundImage: `url(${gridLines.src})`,
                             maskImage,
@@ -74,13 +74,13 @@ const CTA = () => {
                     />
                     <div className="relative">
                         <h2 className="text-5xl md:text-6xl max-w-sm mx-auto tracking-tighter text-center font-medium">
-                            AI-driven SEO for everyone
+                            Organiza tu vida con AsistPro
                         </h2>
                         <p className="text-center text-lg md:text-xl max-w-xs mx-auto text-white/70 px-4 mt-5 tracking-tight">
-                            Achieve clear, impactful results without the complexity.
+                            Un asistente personal de IA disponible 24/7 en tu WhatsApp
                         </p>
                         <div className="flex justify-center mt-8">
-                            <Button>Join waitlist</Button>
+                            <Button>Quiero mi AsistPro</Button>
                         </div>
                     </div>
                 </motion.div>

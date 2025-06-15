@@ -1,3 +1,5 @@
+'use client';
+
 import LogoIcon from "@/public/imgs/logo.svg";
 import MenuIcon from "@/public/imgs/icon-menu.svg";
 import Link from "next/link";
@@ -17,15 +19,17 @@ const  Header = () => {
                     </div>
                     <div className="hidden md:block">
                         <nav className="flex gap-8 text-sm">
-                            <Link href={`#`} className="text-white/70 hover:text-white transition">Features</Link>
-                            <Link href={`#`} className="text-white/70 hover:text-white transition">Developers</Link>
-                            <Link href={`#`} className="text-white/70 hover:text-white transition">Pricing</Link>
-                            <Link href={`#`} className="text-white/70 hover:text-white transition">Changelog</Link>
+                            <Link href={`#features`} className="text-[#fe680b] hover:text-[#fe680b]/80 transition">Características</Link>
+                            <Link href={`#testimonials`} className="text-[#fe680b] hover:text-[#fe680b]/80 transition">Testimonios</Link>
+                            <Link href={`#pricing`} className="text-[#fe680b] hover:text-[#fe680b]/80 transition">Planes</Link>
+                            <Link href={`/faq`} className="text-[#fe680b] hover:text-[#fe680b]/80 transition">FAQ</Link>
                         </nav>
                     </div>
                     <div className="flex gap-4 items-center">
-                        <Button>Join waitlist</Button>
-                        <MenuIcon className="md:hidden" />
+                        <Button>Iniciar sesión</Button>
+                        <button className="md:hidden" onClick={() => alert('Menú mobile abierto')}>
+                          <MenuIcon />
+                        </button>
                     </div>
                 </div>
             </div>

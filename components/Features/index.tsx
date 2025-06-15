@@ -17,7 +17,7 @@ export type TabProps = {
 const tabs: TabProps[] = [
     {
         icon: "/lottie/vroom.lottie",
-        title: "User-friendly dashboard",
+        title: "Finanzas Automáticas",
         isNew: false,
         backgroundPositionX: 0,
         backgroundPositionY: 0,
@@ -25,7 +25,7 @@ const tabs: TabProps[] = [
     },
     {
         icon: "/lottie/click.lottie",
-        title: "One-click optimization",
+        title: "Recordatorios Inteligentes",
         isNew: false,
         backgroundPositionX: 98,
         backgroundPositionY: 100,
@@ -33,7 +33,7 @@ const tabs: TabProps[] = [
     },
     {
         icon: "/lottie/stars.lottie",
-        title: "Smart keyword generator",
+        title: "Google Calendar Sync",
         isNew: true,
         backgroundPositionX: 100,
         backgroundPositionY: 27,
@@ -87,7 +87,7 @@ const FeatureTab = (props: typeof tabs[number] & ComponentPropsWithoutRef<'div'>
         >
             {props.selected && (
                 <motion.div 
-                    className="absolute inset-0 -m-px border border-[#A369FF] rounded-xl" 
+                    className="absolute inset-0 -m-px border border-primary-blue-600 rounded-xl" 
                     style={{
                         maskImage,
                     }}
@@ -103,8 +103,8 @@ const FeatureTab = (props: typeof tabs[number] & ComponentPropsWithoutRef<'div'>
             </div>
             <div className="font-medium">{props.title}</div>
             {props.isNew && (
-                <div className="text-xs text-black font-semibold rounded-full px-2 py-0.5 bg-[#8c44ff]">
-                    New
+                <div className="text-xs text-black font-semibold rounded-full px-2 py-0.5 bg-primary-orange-500">
+                    Nuevo
                 </div>
             )}
         </div>
@@ -138,10 +138,9 @@ const Features = () => {
     return (
         <section className="py-20 md:py-24">
             <div className="container">
-                <h2 className="text-5xl md:text-6xl font-medium text-center tracking-tighter">Elevate your SEO efforts.</h2>
+                <h2 className="text-5xl md:text-6xl font-medium text-center tracking-tighter">Características principales</h2>
                 <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto tracking-tight text-center mt-5">
-                    From small startups to large enterprises, our AI-driven tool has
-                    revolutionized the way businesses approach SEO.
+                    AsistPro combina lo mejor de la organización financiera con gestión de citas, todo por WhatsApp
                 </p>
                 <div className="flex flex-col lg:flex-row gap-3 mt-10">
                     {tabs.map((tab, index) => (

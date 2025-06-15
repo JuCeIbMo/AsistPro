@@ -11,38 +11,38 @@ const Footer = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-8">
                     <div className="flex items-center gap-2 lg:flex-1">
                         <Logo className="h-6 w-6" />
-                        <div className="font-medium">AI Startup Landing Page</div>
+                        <div className="font-medium">AsistPro</div>
                     </div>
                     <nav className="flex flex-col lg:flex-row gap-5 lg:gap-7 lg:flex-1 lg:justify-center">
                         <Link 
-                            href={`#`} 
+                            href={`#features`} 
                             className="text-white/70 hover:text-white text-xs md:text-sm transition"
                         >
-                            Features
+                            Características
                         </Link>
                         <Link 
-                            href={`#`} 
+                            href={`#testimonials`} 
                             className="text-white/70 hover:text-white text-xs md:text-sm transition"
                         >
-                            Developers
+                            Testimonios
                         </Link>
                         <Link 
-                            href={`#`} 
+                            href={`#pricing`} 
                             className="text-white/70 hover:text-white text-xs md:text-sm transition"
                         >
-                            Company
+                            Planes
                         </Link>
                         <Link 
-                            href={`#`} 
+                            href={`/faq`} 
                             className="text-white/70 hover:text-white text-xs md:text-sm transition"
                         >
-                            Blog
+                            Preguntas Frecuentes
                         </Link>
                         <Link 
-                            href={`#`} 
+                            href={`/contact`} 
                             className="text-white/70 hover:text-white text-xs md:text-sm transition"
                         >
-                            Changelog
+                            Contacto
                         </Link>
                     </nav>
                     <div className="flex gap-5 lg:flex-1 lg:justify-end">
