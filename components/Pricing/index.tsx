@@ -1,9 +1,7 @@
 'use client';
 
 import { Check, X } from "lucide-react";
-import Button from "../Button";
 import { motion } from "framer-motion";
-import starsBg from "@/public/imgs/stars.webp";
 import gridLines from "@/public/imgs/grid-lines.webp";
 import { glowVisuals } from "@/config/glowVisuals";
 
