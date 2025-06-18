@@ -1,18 +1,31 @@
-import CTA from "@/components/CTA";
-import Features from "@/components/Features";
-import Footer from "@/components/Footer";
+import dynamic from 'next/dynamic';
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import LogoTicker from "@/components/LogoTicker";
-import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing";
-import { PhoneMockups } from "@/components/PhoneMockups";
+import Footer from "@/components/Footer";
+
+const NewHero = dynamic(() => import('@/components/Hero/NewHero').then(mod => mod.NewHero), {
+  loading: () => <div className="h-screen" />
+});
+const PhoneMockups = dynamic(() => import('@/components/PhoneMockups').then(mod => mod.PhoneMockups), {
+  loading: () => <div className="h-96" />
+});
+const Features = dynamic(() => import('@/components/Features').then(mod => mod.default), {
+  loading: () => <div className="h-96" />
+});
+const Testimonials = dynamic(() => import('@/components/Testimonials').then(mod => mod.default), {
+  loading: () => <div className="h-96" />
+});
+const Pricing = dynamic(() => import('@/components/Pricing').then(mod => mod.default), {
+  loading: () => <div className="h-96" />
+});
+const CTA = dynamic(() => import('@/components/CTA').then(mod => mod.default), {
+  loading: () => <div className="h-96" />
+});
 
 const Home = () => {
 	return (
 		<>
 			<Header />
-			<Hero />
+			<NewHero />
 			<PhoneMockups />
 			<Features />
       <Testimonials />

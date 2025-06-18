@@ -1,7 +1,7 @@
 'use client';
 
 import { DotLottieCommonPlayer, DotLottiePlayer } from "@dotlottie/react-player";
-import productImage from "@/public/imgs/product-image.png";
+import productImage from "@/public/imgs/product-image.webp";
 import { ComponentPropsWithoutRef, useEffect, useRef, useState } from "react";
 import { animate, motion, useMotionTemplate, useMotionValue, ValueAnimationTransition } from "framer-motion";
 

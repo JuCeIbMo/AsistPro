@@ -3,8 +3,8 @@
 import { RefObject, useCallback, useEffect, useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue, useScroll, useTransform } from "framer-motion";
 import Button from "../Button";
-import starsBg from "@/public/imgs/stars.png";
-import gridLines from "@/public/imgs/grid-lines.png";
+import starsBg from "@/public/imgs/stars.webp";
+import gridLines from "@/public/imgs/grid-lines.webp";
 
 const useRelativeMousePosition = (to: RefObject<HTMLElement>) => {
     const mouseX = useMotionValue(0);

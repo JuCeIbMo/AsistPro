@@ -3,8 +3,8 @@
 import { Check, X } from "lucide-react";
 import Button from "../Button";
 import { motion } from "framer-motion";
-import starsBg from "@/public/imgs/stars.png";
-import gridLines from "@/public/imgs/grid-lines.png";
+import starsBg from "@/public/imgs/stars.webp";
+import gridLines from "@/public/imgs/grid-lines.webp";
 import { glowVisuals } from "@/config/glowVisuals";
 
 const Pricing = () => {
@@ -100,44 +100,48 @@ const Pricing = () => {
                   backgroundImage: `url(${gridLines.src})`,
                 }}
               />
-              <div className="relative z-10 text-white">
-              <div className="flex justify-between items-start mb-6">
-                <div>
-                  <h3 className="text-2xl font-bold">{plan.name}</h3>
-                  <p className="text-sm opacity-80">{plan.tagline}</p>
+              <div className="relative z-10 text-white flex flex-col h-full">
+                <div className="flex-grow">
+                  <div className="flex justify-between items-start mb-6">
+                    <div>
+                      <h3 className="text-2xl font-bold">{plan.name}</h3>
+                      <p className="text-sm opacity-80">{plan.tagline}</p>
+                    </div>
+                    <p className="text-2xl font-bold">{plan.price}</p>
+                  </div>
+
+                  <div className="space-y-4 mb-8">
+                    <h4 className="font-medium">Incluye:</h4>
+                    <ul className="space-y-2">
+                      {plan.features.map((feature, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                          <Check className="w-4 h-4" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {plan.exclusions.length > 0 && (
+                    <div className="space-y-4 mb-12">
+                      <h4 className="font-medium">No incluye:</h4>
+                      <ul className="space-y-2">
+                        {plan.exclusions.map((exclusion, i) => (
+                          <li key={i} className="flex items-center gap-2 opacity-70">
+                            <X className="w-4 h-4" />
+                            <span>{exclusion}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
-                <p className="text-2xl font-bold">{plan.price}</p>
-              </div>
-
-              <div className="space-y-4 mb-8">
-                <h4 className="font-medium">Incluye:</h4>
-                <ul className="space-y-2">
-                  {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-2">
-                      <Check className="w-4 h-4" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {plan.exclusions.length > 0 && (
-                <div className="space-y-4 mb-8">
-                  <h4 className="font-medium">No incluye:</h4>
-                  <ul className="space-y-2">
-                    {plan.exclusions.map((exclusion, i) => (
-                      <li key={i} className="flex items-center gap-2 opacity-70">
-                        <X className="w-4 h-4" />
-                        <span>{exclusion}</span>
-                      </li>
-                    ))}
-                  </ul>
+                
+                <div className="mt-auto pt-4">
+                  <button className="w-full bg-white text-black font-bold py-3 px-4 rounded-lg hover:bg-gray-100">
+                    {plan.trial}
+                  </button>
                 </div>
-              )}
-
-              <Button className="w-full mt-4 bg-white text-black hover:bg-gray-100">
-                {plan.trial}
-              </Button>
               </div>
             </motion.div>
           ))}

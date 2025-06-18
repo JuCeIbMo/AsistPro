@@ -6,24 +6,27 @@ import { twMerge } from "tailwind-merge";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "AsistPro",
-	description: "Tu asistente personal para recordatorios y organización",
+  title: "AsistPro",
+  description: "Tu asistente personal para recordatorios y organización",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 const RootLayout = ({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) => {
-	return (
-		<html lang="pt-BR">
-			<body
-				className={twMerge(inter.className, "bg-white text-black antialiased")}
-			>
-				{children}
-			</body>
-		</html>
-	);
+  return (
+    <html lang="pt-BR">
+      <body
+        className={twMerge(inter.className, "bg-white text-black antialiased")}
+      >
+        {children}
+      </body>
+    </html>
+  );
 };
 
 export default RootLayout;

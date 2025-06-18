@@ -1,10 +1,10 @@
 'use client';
 
 import { motion } from "framer-motion";
-import avatar1 from "@/public/imgs/avatar-1.png";
-import avatar2 from "@/public/imgs/avatar-2.png";
-import avatar3 from "@/public/imgs/avatar-3.png";
-import avatar4 from "@/public/imgs/avatar-4.png";
+import avatar1 from "@/public/imgs/avatar-1.webp";
+import avatar2 from "@/public/imgs/avatar-2.webp";
+import avatar3 from "@/public/imgs/avatar-3.webp";
+import avatar4 from "@/public/imgs/avatar-4.webp";
 import Image from "next/image";
 
 const testimonials = [
@@ -61,6 +61,11 @@ const Testimonials = () => {
                                             src={testimonial.avatarImg}
                                             className="h-11 w-11 rounded-lg grayscale"
                                             alt={`Avatar for ${testimonial.name}`}
+                                            width={44}
+                                            height={44}
+                                            quality={85}
+                                            loading="lazy"
+                                            priority={false}
                                             />
                                     </div>
                                     <div className="">

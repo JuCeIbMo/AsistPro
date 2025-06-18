@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Button from "../Button";
-import starsBg from "@/public/imgs/stars.png";
+import starsBg from "@/public/imgs/stars.webp";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { glowVisuals } from "@/config/glowVisuals";
 

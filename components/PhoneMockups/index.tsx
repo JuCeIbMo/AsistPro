@@ -17,7 +17,7 @@ export const PhoneMockups = () => {
             viewport={{ once: true }}
           >
             <PhoneMockup 
-              mediaSrc="/imgs/phone-mockups/left-phone.png" 
+              mediaSrc="/imgs/phone-mockups/left-phone.webp" 
               isVideo={false}
             />
           </motion.div>
@@ -45,7 +45,7 @@ export const PhoneMockups = () => {
             viewport={{ once: true }}
           >
             <PhoneMockup 
-              mediaSrc="/imgs/phone-mockups/right-phone.png" 
+              mediaSrc="/imgs/phone-mockups/right-phone.webp" 
               isVideo={false}
             />
           </motion.div>

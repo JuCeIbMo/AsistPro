@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 type PhoneMockupProps = {
   mediaSrc: string;
@@ -26,13 +27,19 @@ export const PhoneMockup = ({ mediaSrc, isVideo = false, className = '' }: Phone
             muted
             loop
             playsInline
+            preload="none"
             className="w-full h-full object-cover"
+            aria-label="Demo de la aplicación"
           />
         ) : (
-          <img 
+          <Image 
             src={mediaSrc} 
             alt="Mockup de celular" 
+            width={272}
+            height={572}
+            quality={85}
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         )}
       </div>
