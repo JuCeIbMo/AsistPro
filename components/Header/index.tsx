@@ -30,7 +30,7 @@ const  Header = () => {
                         <div className="border rounded-lg inline-flex items-center justify-center border-white/15 p-2">
                             <Image 
                               src="/imgs/logo-main.png" 
-                              alt="Logo"
+                              alt="logo"
                               width={100}
                               height={100}
                               className="h-auto max-h-14 w-auto"
