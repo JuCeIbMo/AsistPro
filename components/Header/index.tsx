@@ -29,7 +29,7 @@ const  Header = () => {
                     <div className="flex items-center justify-between w-full">
                         <div className="border rounded-lg inline-flex items-center justify-center border-white/15 p-2">
                             <Image 
-                              src="/imgs/logo-main.png" 
+                              src="/imgs/logo-nuevo.png" 
                               alt="logo"
                               width={100}
                               height={100}
